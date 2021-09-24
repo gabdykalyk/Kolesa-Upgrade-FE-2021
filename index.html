@@ -14,7 +14,12 @@
             <div class="card">
                 <div class="card-images">
                     <div class="card-images__main">
-                        <img src="./src/assets/main.jpg" alt="">
+                        <img width="330px" src="./src/assets/second.jpg" alt="">
+                    </div>
+                    <div class="card-images__others">
+                        <img style="width: 50px;" src="./src/assets/first.jpg" alt="">
+                        <img style="width: 50px;" class="card-images-active" src="./src/assets/second.jpg" alt="">
+                        <img style="width: 50px;" src="./src/assets/third.jpg" alt="">
                     </div>
                 </div>
                 <div class="card-info">
@@ -45,39 +50,39 @@
                         </div>
                     </div>
                     <div class="card-info__color">
-                        <div class="card-info__color-header">
+                        <div class="card-info__checkbox-header">
                             Цвета:
                         </div>
-                        <form action="" class="card-info__color-form">
-                            <div class="card-info__color-choice">
+                        <form action="" class="card-info__form">
+                            <div class="card-info__choice">
                                 <input id="color-blue" type="radio" name="color-choice" checked>
-                                <label for="color-blue" class="card-info__color-checkbox">
-                                    <div class="card-info__color-box card-info__color-box--blue">
+                                <label for="color-blue" class="card-info__checkbox">
+                                    <div class="card-info__box card-info__box--blue">
 
                                     </div>
-                                    <div class="card-info__color-text">
+                                    <div class="card-info__text">
                                         Синий
                                     </div>
                                 </label>
                             </div>
-                            <div class="card-info__color-choice">
+                            <div class="card-info__choice">
                                 <input id="color-beige" type="radio" name="color-choice">
-                                <label for="color-beige" class="card-info__color-checkbox">
-                                    <div class="card-info__color-box card-info__color-box--beige">
+                                <label for="color-beige" class="card-info__checkbox">
+                                    <div class="card-info__box card-info__box--beige">
 
                                     </div>
-                                    <div class="card-info__color-text">
+                                    <div class="card-info__text">
                                         Бежевый
                                     </div>
                                 </label>
                             </div>
-                            <div class="card-info__color-choice">
+                            <div class="card-info__choice">
                                 <input id="color-grey" type="radio" name="color-choice">
-                                <label for="color-grey" class="card-info__color-checkbox">
-                                    <div class="card-info__color-box card-info__color-box--grey">
+                                <label for="color-grey" class="card-info__checkbox">
+                                    <div class="card-info__box card-info__box--grey">
 
                                     </div>
-                                    <div class="card-info__color-text">
+                                    <div class="card-info__text">
                                         Серый
                                     </div>
                                 </label>
@@ -85,30 +90,30 @@
                         </form>
                     </div>
                     <div class="card-info__size">
-                        <div class="card-info__color-header">
+                        <div class="card-info__checkbox-header">
                             Размер:
                         </div>
-                        <form action="" class="card-info__color-form">
-                            <div class="card-info__color-choice">
-                                <input id="color-blue" type="radio" name="color-choice" checked>
-                                <label for="color-blue" class="card-info__color-checkbox">
-                                    <div class="card-info__color-text">
+                        <form action="" class="card-info__form">
+                            <div class="card-info__choice">
+                                <input id="size-s" type="radio" name="size-choice" checked>
+                                <label for="size-s" class="card-info__checkbox card-info__size-checkbox">
+                                    <div class="card-info__text card-info__size-text">
                                         S
                                     </div>
                                 </label>
                             </div>
-                            <div class="card-info__color-choice">
-                                <input id="color-beige" type="radio" name="color-choice">
-                                <label for="color-beige" class="card-info__color-checkbox">
-                                    <div class="card-info__color-text">
+                            <div class="card-info__choice">
+                                <input id="size-m" type="radio" name="size-choice">
+                                <label for="size-m" class="card-info__checkbox card-info__size-checkbox">
+                                    <div class="card-info__text card-info__size-text">
                                         M
                                     </div>
                                 </label>
                             </div>
-                            <div class="card-info__color-choice">
-                                <input id="color-grey" type="radio" name="color-choice">
-                                <label for="color-grey" class="card-info__color-checkbox">
-                                    <div class="card-info__color-text">
+                            <div class="card-info__choice">
+                                <input id="size-l" type="radio" name="size-choice">
+                                <label for="size-l" class="card-info__checkbox card-info__size-checkbox">
+                                    <div class="card-info__text card-info__size-text">
                                         L
                                     </div>
                                 </label>
@@ -123,11 +128,11 @@
                             Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%
                         </div>
                     </div>
-                    <div class="card-info__help">
-                        <div class="card-info__help-header">
+                    <div class="card-info__details">
+                        <div class="card-info__details-header">
                             Как выбрать размер:
                         </div>
-                        <div class="card-info__help-info">
+                        <div class="card-info__details-info">
                             Написать дяде Рику для уточнения.
                         </div>
                     </div>
@@ -136,6 +141,15 @@
         </div>
     </div>
     <script type="module" src="/src/js/main.js"></script>
+    <script>
+        const image = document.querySelector('.card-images__others')
+        const images = document.querySelector('.card-images__others > img')
+        console.log(image)
+        image.addEventListener('click', (e)=> {
+            if (images)
+            e.target.classList.add('card-images-active')
+        })
+    </script>
 </body>
 
 </html>
