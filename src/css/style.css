@@ -6,3 +6,148 @@
     color: #2c3e50;
     margin-top: 60px;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    max-width: 1040px;
+    text-align: left;
+    padding: 56px 56px 64px;
+}
+
+.card-info {
+    margin-top: 8px;
+    margin-left: 24px;
+}
+
+.card-info__header {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.card-info__score {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.card-info__order {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.card-info__btn {
+    border: none;
+    background: #2a81dd;
+    box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    padding: 6px 0;
+    width: 134px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.card-info__balance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0fafd;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+.card-info__your-balance-text {
+    line-height: 24px;
+    font-size: 14px;
+    color: #888b94;
+}
+
+.card-info__balance-amount {
+    line-height: 24px;
+    margin-top: 4px;
+    color: #1c1819;
+}
+
+.card-info__balance-img {
+    margin-left: 12px;
+}
+
+.card-info__color-form {
+    display: flex;
+    margin-top: 8px;
+}
+
+.card-info__color-header {
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+.card-info__color-choice {
+    display: flex;
+    margin-right: 8px;
+}
+
+.card-info__color-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.card-info__color-box {
+    width: 23px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.card-info__color-box--blue {
+    background: #00458a;
+}
+
+.card-info__color-box--beige {
+    background: #efe8d8;
+}
+
+.card-info__color-box--grey {
+    background: #d4d4da;
+}
+
+.card-info__color-text {
+    color: #2a81dd;
+}
+
+.card-info__color-choice > input:checked ~ .card-info__color-checkbox {
+    background: #d6ecfb;
+    border: 1px solid transparent;
+}
+
+.card-info__color-choice > input:checked ~ .card-info__color-checkbox > .card-info__color-text {
+    color: #000;
+}
+
+.card-info__color-choice > input {
+    display: none;
+}

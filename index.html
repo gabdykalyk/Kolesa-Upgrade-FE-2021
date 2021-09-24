@@ -1,13 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
+</head>
+
+<body>
+    <div id="app">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-images">
+                    <div class="card-images__main">
+                        <img src="./src/assets/main.jpg" alt="">
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="card-info__header">
+                        Футболка "Эволюционируй или сдохни"
+                    </div>
+                    <div class="card-info__order">
+                        <div class="card-info__price">
+                            <div class="card-info__score">
+                                100 баллов
+                            </div>
+                            <button class="card-info__btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                        <div class="card-info__balance">
+                            <div class="card-info__balance-info">
+                                <div class="card-info__your-balance-text">
+                                    Твой баланс:
+                                </div>
+                                <div class="card-info__balance-amount">
+                                    3 945 баллов
+                                </div>
+                            </div>
+                            <div class="card-info__balance-img">
+                                <img src="./src/assets/balanceIcon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info__color">
+                        <div class="card-info__color-header">
+                            Цвета:
+                        </div>
+                        <form action="" class="card-info__color-form">
+                            <div class="card-info__color-choice">
+                                <input id="color-blue" type="radio" name="color-choice" checked>
+                                <label for="color-blue" class="card-info__color-checkbox">
+                                    <div class="card-info__color-box card-info__color-box--blue">
+
+                                    </div>
+                                    <div class="card-info__color-text">
+                                        Синий
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="card-info__color-choice">
+                                <input id="color-beige" type="radio" name="color-choice">
+                                <label for="color-beige" class="card-info__color-checkbox">
+                                    <div class="card-info__color-box card-info__color-box--beige">
+
+                                    </div>
+                                    <div class="card-info__color-text">
+                                        Бежевый
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="card-info__color-choice">
+                                <input id="color-grey" type="radio" name="color-choice">
+                                <label for="color-grey" class="card-info__color-checkbox">
+                                    <div class="card-info__color-box card-info__color-box--grey">
+
+                                    </div>
+                                    <div class="card-info__color-text">
+                                        Серый
+                                    </div>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-info__size">
+                        <div class="card-info__color-header">
+                            Размер:
+                        </div>
+                        <form action="" class="card-info__color-form">
+                            <div class="card-info__color-choice">
+                                <input id="color-blue" type="radio" name="color-choice" checked>
+                                <label for="color-blue" class="card-info__color-checkbox">
+                                    <div class="card-info__color-text">
+                                        S
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="card-info__color-choice">
+                                <input id="color-beige" type="radio" name="color-choice">
+                                <label for="color-beige" class="card-info__color-checkbox">
+                                    <div class="card-info__color-text">
+                                        M
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="card-info__color-choice">
+                                <input id="color-grey" type="radio" name="color-choice">
+                                <label for="color-grey" class="card-info__color-checkbox">
+                                    <div class="card-info__color-text">
+                                        L
+                                    </div>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-info__details">
+                        <div class="card-info__details-header">
+                            Детали:
+                        </div>
+                        <div class="card-info__details-info">
+                            Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%
+                        </div>
+                    </div>
+                    <div class="card-info__help">
+                        <div class="card-info__help-header">
+                            Как выбрать размер:
+                        </div>
+                        <div class="card-info__help-info">
+                            Написать дяде Рику для уточнения.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="module" src="/src/js/main.js"></script>
-  </body>
+</body>
+
 </html>
