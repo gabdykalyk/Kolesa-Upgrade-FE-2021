@@ -16,10 +16,16 @@
     color: #1c1819;
 }
 
+body {
+    background: rgba(28, 24, 25, 0.6);
+}
+
 .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 100%;
+    max-height: 100vh;
 }
 
 .card {
@@ -28,6 +34,8 @@
     max-width: 1040px;
     text-align: left;
     padding: 56px 56px 64px;
+    background-color: #fff;
+    border-radius: 16px;
 }
 
 .card-info {
@@ -65,6 +73,11 @@
     line-height: 24px;
     margin-top: 8px;
     cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.card-info__btn:hover {
+    background: rgba(42, 129, 221, 0.8);
 }
 
 .card-info__balance {
