@@ -143,11 +143,12 @@
     <script type="module" src="/src/js/main.js"></script>
     <script>
         const image = document.querySelector('.card-images__others')
-        const images = document.querySelector('.card-images__others > img')
-        console.log(image)
         image.addEventListener('click', (e)=> {
-            if (images)
+            let activeImage = document.querySelector('.card-images-active')
+            activeImage.classList.remove('card-images-active')
             e.target.classList.add('card-images-active')
+            let mainImage = document.querySelector('.card-images__main img')
+            mainImage.src = e.target.src
         })
     </script>
 </body>
