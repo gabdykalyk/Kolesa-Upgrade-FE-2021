@@ -148,7 +148,9 @@
             activeImage.classList.remove('card-images-active')
             e.target.classList.add('card-images-active')
             let mainImage = document.querySelector('.card-images__main img')
-            mainImage.src = e.target.src
+            if (e.target.src) {
+                mainImage.src = e.target.src
+            }
         })
     </script>
 </body>
