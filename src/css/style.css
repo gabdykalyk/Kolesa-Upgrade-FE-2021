@@ -6,3 +6,212 @@
     color: #2c3e50;
     margin-top: 60px;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #1c1819;
+}
+
+body {
+    background: rgba(28, 24, 25, 0.6);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    max-height: 100vh;
+}
+
+.card {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    max-width: 1040px;
+    text-align: left;
+    padding: 56px 56px 64px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.card-info {
+    margin-top: 8px;
+    margin-left: 24px;
+    max-width: 573px;
+}
+
+.card-info__header {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.card-info__score {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.card-info__order {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.card-info__btn {
+    border: none;
+    background: #2a81dd;
+    box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    padding: 6px 0;
+    width: 134px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.card-info__btn:hover {
+    background: rgba(42, 129, 221, 0.8);
+}
+
+.card-info__balance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0fafd;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+.card-info__your-balance-text {
+    line-height: 24px;
+    font-size: 14px;
+    color: #888b94;
+}
+
+.card-info__balance-amount {
+    line-height: 24px;
+    margin-top: 4px;
+    color: #1c1819;
+}
+
+.card-info__balance-img {
+    margin-left: 12px;
+}
+
+.card-info__form {
+    display: flex;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.card-info__checkbox-header {
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+.card-info__choice {
+    display: flex;
+    margin-right: 8px;
+}
+
+.card-info__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.card-info__box {
+    width: 23px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.card-info__box--blue {
+    background: #00458a;
+}
+
+.card-info__box--beige {
+    background: #efe8d8;
+}
+
+.card-info__box--grey {
+    background: #d4d4da;
+}
+
+.card-info__text {
+    color: #2a81dd;
+}
+
+.card-info__choice > input:checked ~ .card-info__checkbox {
+    background: #d6ecfb;
+    border: 1px solid transparent;
+}
+
+.card-info__choice > input:checked ~ .card-info__checkbox > .card-info__text {
+    color: #000;
+}
+
+.card-info__choice > input {
+    display: none;
+}
+
+.card-info__details {
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.card-info__details-header {
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.card-info__details-info {
+    line-height: 24px;
+    margin-top: 4px;
+}
+
+.card-info__size-text {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-info__size-checkbox {
+    padding: 0;
+}
+
+.card-images__others > img {
+    display: block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+}
+
+.card-images__others .card-images-active {
+    border: 1px solid #2a81dd;
+    border-radius: 8px;
+}
+
+.card-images__others {
+    display: flex;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    max-width: 330px;
+    overflow: hidden;
+    cursor: pointer;
+}
