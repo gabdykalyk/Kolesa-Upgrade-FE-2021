@@ -1,6 +1,8 @@
 .container {
     display: flex;
     padding: 32px 89px 0 32px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .aside__nav {
@@ -10,11 +12,11 @@
 .aside__nav ul li {
     margin-bottom: 26px;
     position: relative;
+    transition: all 0.2s linear;
 }
 
-.aside__nav ul li:nth-child(3) a::before {
-    content: '';
-    display: block;
+.aside__nav--active {
+    display: none;
     width: 4px;
     height: 36px;
     background: #2a81dd;
@@ -22,6 +24,23 @@
     position: absolute;
     right: 225px;
     bottom: -8px;
+    transition: all 0.2s linear;
+}
+
+.aside__nav--selected {
+    font-weight: 700;
+}
+
+.aside__nav ul li:nth-child(3) .aside__nav--active {
+    display: block;
+}
+
+.aside__nav ul li a:hover {
+    font-weight: 700;
+}
+
+.aside__nav ul li a:hover ~ .aside__nav--active {
+    display: block;
 }
 
 .main {
@@ -42,6 +61,13 @@
     background: #f2f2f3;
     border-radius: 8px;
     width: 308px;
+}
+
+.header__search-logo {
+    display: block;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .header__search input {
@@ -69,10 +95,12 @@
     font-size: 14px;
     font-weight: 600;
     color: #2a81dd;
+    line-height: 24px;
 }
 
 .user__points {
     font-size: 13px;
+    line-height: 20px;
 }
 
 .main__banner {
@@ -97,6 +125,8 @@
     align-items: center;
     font-weight: 600;
     font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
 }
 
 .points__info {
@@ -104,16 +134,29 @@
 }
 
 .points__box--green {
-    background: #eff8eb;
+    background: rgb(239, 248, 235);
+}
+
+.points__box--green:hover {
+    background: rgba(239, 248, 235, 0.6);
 }
 
 .points__box--yelow {
-    background: #fffae7;
+    background: rgb(255, 250, 231);
+    margin: 0 24px;
+}
+
+.points__box--yelow:hover {
+    background: rgba(255, 250, 231, 0.6);
     margin: 0 24px;
 }
 
 .points__box--blue {
-    background: #e9f2fb;
+    background: rgb(233, 242, 251);
+}
+
+.points__box--blue:hover {
+    background: rgba(233, 242, 251, 0.6);
 }
 
 .main__filter {
@@ -130,6 +173,14 @@
     color: #2a81dd;
     line-height: 24px;
     margin-right: 8px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.main__button:hover {
+    background: #d6ecfb;
+    border: 1px solid transparent;
+    color: #1c1819;
 }
 
 .main__button--active {
@@ -206,6 +257,11 @@
     font-size: 16px;
     margin-top: 16px;
     transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.goods__btn:hover {
+    background: rgba(42, 129, 221, 0.6);
 }
 
 .goods__item:hover {
@@ -246,6 +302,7 @@
 .footer__icons {
     margin-top: 8px;
     display: flex;
+    cursor: pointer;
 }
 
 .footer__icons img {
@@ -270,6 +327,12 @@
     color: #2a81dd;
     margin-left: 60px;
     line-height: 24px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.footer__btn:hover {
+    background-color: rgba(255, 255, 255, 0.863);
 }
 
 .goods__item:nth-child(1),
