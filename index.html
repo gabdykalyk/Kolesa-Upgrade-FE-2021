@@ -10,84 +10,378 @@
 
 <body>
     <div id="app">
-        <div class="card-container">
-            <div class="card">
-                <div class="card-images">
-                    <div class="card-images__main">
-                        <img width="330px" src="./src/assets/order/bottle.jpg" alt="">
+        <div class="container">
+            <aside class="aside">
+                <div class="aside__banner">
+                    <img src="./src/assets/mainwbanner/KolesaGroup.svg" alt="">
+                </div>
+                <nav class="aside__nav">
+                    <ul>
+                        <li>
+                            <a href="">Оргсхема</a>
+                        </li>
+                        <li>
+                            <a href="">Kolesa <b>Team</b></a>
+                        </li>
+                        <li>
+                            <a href=""><b>Kolesa Shop</b></a>
+                        </li>
+                        <li>
+                            <a href="">Картина компании</a>
+                        </li>
+                        <li>
+                            <a href="">Новости</a>
+                        </li>
+                        <li>
+                            <a href="">Education</a>
+                        </li>
+                        <li>
+                            <a href="">Guidelines</a>
+                        </li>
+                        <li>
+                            <a href="">Библиотека</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="main">
+                <header class="header">
+                    <form action="" class="header__form">
+                        <div class="header__search">
+                            <div class="header__search-logo">
+                                <img src="./src/assets/mainwbanner/search.svg" alt="">
+                            </div>
+                            <input type="text" placeholder="Поиск">
+                        </div>
+                    </form>
+                    <div class="user">
+                        <div class="user__avatar">
+                            <img src="./src/assets/mainwbanner/rick.png" alt="">
+                        </div>
+                        <div class="user__info">
+                            <div class="user__name">
+                                Мортиджан
+                            </div>
+                            <div class="user__points">
+                                300 баллов
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-images__others">
-                        <img style="width: 50px;" class="card-images-active" src="./src/assets/order/bottle.jpg" alt="">
+                </header>
+                <div class="main__banner">
+                    <img src="./src/assets/mainwbanner/banner.jpg" alt="">
+                </div>
+                <div class="points">
+                    <div class="points__box points__box--green">
+                        <div class="points__icon">
+                            <img src="./src/assets/mainwbanner/plus.svg" alt="">
+                        </div>
+                        <div class="points__info">
+                            Получить баллы
+                        </div>
+                    </div>
+                    <div class="points__box points__box--yelow">
+                        <div class="points__icon">
+                            <img src="./src/assets/mainwbanner/quest.svg" alt="">
+                        </div>
+                        <div class="points__info">
+                            Как получить баллы
+                        </div>
+                    </div>
+                    <div class="points__box points__box--blue">
+                        <div class="points__icon">
+                            <img src="./src/assets/mainwbanner/present.svg" alt="">
+                        </div>
+                        <div class="points__info">
+                            Подарить баллы
+                        </div>
                     </div>
                 </div>
-                <div class="card-info">
-                    <div class="card-info__header">
-                        Бутылка для воды
-                    </div>
-                    <div class="card-info__order">
-                        <div class="card-info__price">
-                            <div class="card-info__score">
-                                100 баллов
+                <div class="main__filter">
+                    <button type="button" class="main__button main__button--active">
+                        Все товары
+                    </button>
+                    <button type="button" class="main__button">
+                        Одежда
+                    </button>
+                    <button type="button" class="main__button">
+                        Аксессуары
+                    </button>
+                </div>
+                <div class="goods">
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
+                            <div class="goods__new">
+                                New
                             </div>
-                            <button class="card-info__btn" type="button">
+                        </div>
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
+                            </div>
+                            <div class="goods__name">
+                                Футболка "Эволюционируй или ...
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
                                 Заказать
                             </button>
                         </div>
-                        <div class="card-info__balance card-info__balance--margin">
-                            <div class="card-info__balance-info">
-                                <div class="card-info__your-balance-text">
-                                    Твой баланс:
-                                </div>
-                                <div class="card-info__balance-amount">
-                                    3 945 баллов
-                                </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
+                            <div class="goods__new">
+                                New
                             </div>
-                            <div class="card-info__balance-img">
-                                <img src="./src/assets/balanceIcon.png" alt="">
+                        </div>
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
                             </div>
+                            <div class="goods__name">
+                                Футболка "Эволюционируй или ...
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
+                                Заказать
+                            </button>
                         </div>
                     </div>
-                    <div class="card-info__size">
-                        <div class="card-info__checkbox-header">
-                            Объем:
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
                         </div>
-                        <div action="" class="card-info__form">
-                            <div class="card-info__choice">
-                                <input id="size-s" type="radio" name="size-choice" checked>
-                                <label for="size-s" class="card-info__checkbox card-info__size-checkbox">
-                                    <div class="card-info__text card-info__size-text card-info__volume-text">
-                                        0,7 л
-                                    </div>
-                                </label>
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
                             </div>
+                            <div class="goods__name">
+                                Футболка "Эволюционируй или ...
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
+                                Заказать
+                            </button>
                         </div>
                     </div>
-                    <div class="card-info__details">
-                        <div class="card-info__details-header">
-                            Детали:
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
                         </div>
-                        <div class="card-info__details-info">
-                            Бутылка для воды с трубочкой
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
+                            </div>
+                            <div class="goods__name">
+                                Свитшот
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
+                        </div>
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
+                            </div>
+                            <div class="goods__name">
+                                Свитшот
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
+                        </div>
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
+                            </div>
+                            <div class="goods__name">
+                                Свитшот
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
+                        </div>
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
+                            </div>
+                            <div class="goods__name">
+                                Свитшот
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
+                        </div>
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
+                            </div>
+                            <div class="goods__name">
+                                Свитшот
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
+                        </div>
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
+                            </div>
+                            <div class="goods__name">
+                                Свитшот
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
+                        </div>
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
+                            </div>
+                            <div class="goods__name">
+                                Свитшот
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
+                        </div>
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
+                            </div>
+                            <div class="goods__name">
+                                Свитшот
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="goods__item">
+                        <div class="goods__img">
+                            <img src="./src/assets/mainwbanner/sweet.jpg" alt="">
+                        </div>
+                        <div class="goods__info">
+                            <div class="goods__price">
+                                220 баллов
+                            </div>
+                            <div class="goods__name">
+                                Свитшот
+                            </div>
+                            <div class="goods__size">
+                                Размеры S/M/L
+                            </div>
+                            <button class="goods__btn" type="button">
+                                Заказать
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
+        <footer class="footer">
+            <div class="footer__social">
+                <div class="footer__kolesa">
+                    © Kolesa Group
+                </div>
+                <div class="footer__icons">
+                    <img src="./src/assets/mainwbanner/Instagram.svg" alt="">
+                    <img src="./src/assets/mainwbanner/YouTube.svg" alt="">
+                    <img src="./src/assets/mainwbanner/VK.svg" alt="">
+                </div>
+            </div>
+            <div class="footer__message">
+                <div class="footer__txt">
+                    Есть идеи что улучшить? <br>
+                    Не знаешь, с кем решить проблему?
+                </div>
+                <button class="footer__btn" type="button">
+                    Написать
+                </button>
+            </div>
+        </footer>
     </div>
     <script type="module" src="/src/js/main.js"></script>
-    <script>
-        const image = document.querySelector('.card-images__others')
-        image.addEventListener('click', (e) => {
-            let activeImage = document.querySelector('.card-images-active')
-            activeImage.classList.remove('card-images-active')
-            e.target.classList.add('card-images-active')
-            let mainImage = document.querySelector('.card-images__main img')
-            if (e.target.src) {
-                mainImage.src = e.target.src
-            }
+    <!-- <script>
+        let item = document.querySelectorAll('.goods__item')
+        console.log(item)
+        let info = document.querySelectorAll('.goods__info')
+        item.forEach((e)=> {
+            e.addEventListener('click', (e)=>{
+            console.log(e.target)
         })
-    </script>
+        })
+    </script> -->
 </body>
 
 </html>
-

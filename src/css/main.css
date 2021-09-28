@@ -194,7 +194,7 @@
 }
 
 .goods__btn {
-    display: block;
+    display: none;
     width: 100%;
     background: #2a81dd;
     outline: none;
@@ -205,9 +205,6 @@
     border-radius: 8px;
     font-size: 16px;
     margin-top: 16px;
-}
-
-.goods__item {
     transition: all 0.2s linear;
 }
 
@@ -215,6 +212,11 @@
     box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
     border-radius: 8px;
     cursor: pointer;
+    margin-bottom: -62px;
+}
+
+.goods__item:hover .goods__btn {
+    display: block;
 }
 
 .goods__item:hover .goods__price {
@@ -268,4 +270,22 @@
     color: #2a81dd;
     margin-left: 60px;
     line-height: 24px;
+}
+
+.goods__item:nth-child(1),
+.goods__item:nth-child(2),
+.goods__item:nth-child(3) {
+    z-index: 4;
+}
+
+.goods__item:nth-child(4),
+.goods__item:nth-child(5),
+.goods__item:nth-child(6) {
+    z-index: 3;
+}
+
+.goods__item:nth-child(7),
+.goods__item:nth-child(8),
+.goods__item:nth-child(9) {
+    z-index: 2;
 }
