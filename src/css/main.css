@@ -1,0 +1,271 @@
+.container {
+    display: flex;
+    padding: 32px 89px 0 32px;
+}
+
+.aside__nav {
+    margin-top: 30px;
+}
+
+.aside__nav ul li {
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.aside__nav ul li:nth-child(3) a::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 36px;
+    background: #2a81dd;
+    border-radius: 10px;
+    position: absolute;
+    right: 225px;
+    bottom: -8px;
+}
+
+.main {
+    margin-left: 66px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__search {
+    display: flex;
+    padding-left: 19px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    background: #f2f2f3;
+    border-radius: 8px;
+    width: 308px;
+}
+
+.header__search input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    margin-left: 16px;
+}
+
+.header__search input::placeholder {
+    color: #888b94;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user__info {
+    margin-left: 16px;
+}
+
+.user__name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2a81dd;
+}
+
+.user__points {
+    font-size: 13px;
+}
+
+.main__banner {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.main__banner img {
+    width: 100%;
+}
+
+.points {
+    display: flex;
+    margin-top: 24px;
+}
+
+.points__box {
+    flex-grow: 1;
+    padding: 10px 26px 10px 24px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.points__info {
+    margin-left: 16px;
+}
+
+.points__box--green {
+    background: #eff8eb;
+}
+
+.points__box--yelow {
+    background: #fffae7;
+    margin: 0 24px;
+}
+
+.points__box--blue {
+    background: #e9f2fb;
+}
+
+.main__filter {
+    margin-top: 40px;
+}
+
+.main__button {
+    outline: none;
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    padding: 6px 20px;
+    background-color: transparent;
+    font-size: 14px;
+    color: #2a81dd;
+    line-height: 24px;
+    margin-right: 8px;
+}
+
+.main__button--active {
+    background: #d6ecfb;
+    border: 1px solid transparent;
+    color: #1c1819;
+}
+
+.goods {
+    display: grid;
+    margin-top: 16px;
+    grid-gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 192px;
+}
+
+.goods__img {
+    position: relative;
+}
+
+.goods__img img {
+    width: 100%;
+}
+
+.goods__new {
+    display: inline-block;
+    background: #64bd38;
+    border-radius: 4px;
+    padding: 0 4px;
+    line-height: 20px;
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    text-transform: uppercase;
+}
+
+.goods__info {
+    padding: 16px;
+}
+
+.goods__price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2a81dd;
+}
+
+.goods__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+.goods__size {
+    color: #888b94;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 4px;
+}
+
+.goods__btn {
+    display: block;
+    width: 100%;
+    background: #2a81dd;
+    outline: none;
+    border: none;
+    color: #fff;
+    line-height: 24px;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.goods__item {
+    transition: all 0.2s linear;
+}
+
+.goods__item:hover {
+    box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.goods__item:hover .goods__price {
+    color: #f33;
+}
+
+.footer {
+    background: #1c1819;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 39px 22px 32px;
+}
+
+.footer__txt {
+    line-height: 24px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer__kolesa {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer__icons {
+    margin-top: 8px;
+    display: flex;
+}
+
+.footer__icons img {
+    display: block;
+    margin-right: 8px;
+}
+
+.footer__message {
+    display: flex;
+    align-items: center;
+}
+
+.footer__btn {
+    box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    width: 150px;
+    padding: 6px 0;
+    display: block;
+    outline: none;
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    background-color: #fff;
+    color: #2a81dd;
+    margin-left: 60px;
+    line-height: 24px;
+}
