@@ -1,3 +1,13 @@
+@import '../styles/vars.scss';
+@import '../styles/mixins.scss';
+@import '../styles/main-page/main';
+@import '../styles/main-page/aside';
+@import '../styles/main-page/header';
+@import '../styles/main-page/user';
+@import '../styles/main-page/points';
+@import '../styles/main-page/goods';
+@import '../styles/main-page/footer';
+
 #app {
     /* font-family: Avenir, Helvetica, Arial, sans-serif; */
     font-family: 'Open Sans', sans-serif;
@@ -26,4 +36,11 @@ li {
 a {
     color: unset;
     text-decoration: none;
+}
+
+.container {
+    display: flex;
+    padding: 32px 89px 0 32px;
+    max-width: 1440px;
+    margin: 0 auto;
 }

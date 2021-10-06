@@ -1,0 +1,20 @@
+.user {
+    display: flex;
+    align-items: center;
+
+    &__info {
+        margin-left: 16px;
+    }
+
+    &__name {
+        font-size: $fs14;
+        font-weight: 600;
+        color: $blue;
+        line-height: 24px;
+    }
+
+    &__points {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}

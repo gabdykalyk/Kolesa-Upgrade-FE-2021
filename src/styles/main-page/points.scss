@@ -1,0 +1,46 @@
+.points {
+    display: flex;
+    padding-top: 24px;
+
+    &__box {
+        flex-grow: 1;
+        padding: 10px 26px 10px 24px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+    }
+
+    &__info {
+        margin-left: 16px;
+    }
+
+    &__box--green {
+        background: rgb(239, 248, 235);
+    }
+
+    &__box--green:hover {
+        background: rgba(239, 248, 235, 0.6);
+    }
+
+    &__box--yellow {
+        background: rgb(255, 250, 231);
+        margin: 0 24px;
+    }
+
+    &__box--yellow:hover {
+        background: rgba(255, 250, 231, 0.6);
+        margin: 0 24px;
+    }
+
+    &__box--blue {
+        background: rgb(233, 242, 251);
+    }
+
+    &__box--blue:hover {
+        background: rgba(233, 242, 251, 0.6);
+    }
+}

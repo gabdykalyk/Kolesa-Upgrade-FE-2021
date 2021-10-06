@@ -1,0 +1,42 @@
+.aside {
+    &__nav {
+        margin-top: 32px;
+        width: 150px;
+    }
+
+    &__nav ul li {
+        margin-bottom: 26px;
+        position: relative;
+        transition: all 0.2s linear;
+        white-space: nowrap;
+    }
+
+    &__nav a::before {
+        content: '';
+        display: none;
+        width: 4px;
+        height: 36px;
+        background: $blue;
+        border-radius: 10px;
+        position: absolute;
+        right: calc(100% + 8px);
+        bottom: -8px;
+        transition: all 0.2s linear;
+    }
+
+    &__nav--selected {
+        font-weight: 700;
+    }
+
+    &__nav ul li:nth-child(3) a::before {
+        display: block;
+    }
+
+    &__nav ul li a:hover {
+        font-weight: 700;
+    }
+
+    &__nav ul li:hover a::before {
+        display: block;
+    }
+}

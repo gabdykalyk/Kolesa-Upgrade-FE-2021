@@ -1,0 +1,40 @@
+.header {
+    @include dflex-space-between;
+
+    &__search {
+        display: flex;
+        padding-left: 19px;
+        padding-top: $fs14;
+        padding-bottom: 13px;
+        background: #f2f2f3;
+        border-radius: 8px;
+        width: 308px;
+    }
+
+    &__search input:active {
+        color: $blue;
+    }
+
+    &__search input:focus {
+        color: $grey;
+    }
+
+    &__search-logo {
+        display: block;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__search input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 18px;
+        margin-left: 16px;
+    }
+
+    &__search input::placeholder {
+        color: $grey;
+    }
+}
