@@ -1,0 +1,38 @@
+.header {
+    @include dflex-space-between;
+
+    &__search {
+        display: flex;
+        padding: 14px 0 13px 19px;
+        background: #f2f2f3;
+        border-radius: 8px;
+        width: 308px;
+
+        & input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-size: 18px;
+            margin-left: 16px;
+
+            &:active {
+                color: $blue;
+            }
+
+            &:focus {
+                color: $grey;
+            }
+
+            &::placeholder {
+                color: $grey;
+            }
+        }
+
+        &-logo {
+            display: block;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.goods {
+    display: grid;
+    margin-top: 16px;
+    grid-gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 192px;
+
+    &__img-wrapper {
+        position: relative;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__new {
+        display: inline-block;
+        background: #64bd38;
+        border-radius: 4px;
+        padding: 0 4px;
+        line-height: 20px;
+        font-size: 13px;
+        color: #fff;
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        text-transform: uppercase;
+    }
+
+    &__info {
+        padding: 16px;
+    }
+
+    &__price {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: $blue;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 8px;
+    }
+
+    &__size {
+        color: #888b94;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 4px;
+    }
+
+    &__btn {
+        display: none;
+        width: 100%;
+        background: $blue;
+        outline: none;
+        border: none;
+        color: $white;
+        line-height: 24px;
+        padding: 10px 0;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-top: 16px;
+        transition: all 0.2s linear;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(42, 129, 221, 0.6);
+        }
+    }
+
+    &__item {
+        &:hover {
+            box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: -62px;
+            z-index: 2;
+        }
+
+        &:hover .goods__btn {
+            display: block;
+        }
+
+        &:hover .goods__price {
+            color: #f33;
+        }
+    }
+}

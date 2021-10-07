@@ -1,0 +1,43 @@
+.main {
+    padding-left: 66px;
+    width: 100%;
+
+    &__banner {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    &__banner img {
+        width: 100%;
+    }
+
+    &__filter {
+        margin-top: 40px;
+    }
+
+    &__button {
+        outline: none;
+        border: 1px solid rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+        padding: 6px 20px;
+        background-color: transparent;
+        font-size: $fs14;
+        color: $blue;
+        line-height: 24px;
+        margin-right: 8px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+            background: $light-grey;
+            border: 1px solid transparent;
+            color: #1c1819;
+        }
+
+        &--active {
+            background: $light-grey;
+            border: 1px solid transparent;
+            color: #1c1819;
+        }
+    }
+}

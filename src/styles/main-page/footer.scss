@@ -1,0 +1,55 @@
+.footer {
+    @include dflex-space-between;
+
+    background: #1c1819;
+    color: $white;
+    padding: 32px 39px 22px 32px;
+
+    &__txt {
+        line-height: 24px;
+        color: $white;
+        font-size: $fs14;
+    }
+
+    &__kolesa {
+        color: $white;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__icons {
+        margin-top: 8px;
+        display: flex;
+        cursor: pointer;
+
+        & img {
+            display: block;
+            margin-right: 8px;
+        }
+    }
+
+    &__message {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+        width: 150px;
+        padding: 6px 0;
+        display: block;
+        outline: none;
+        border: 1px solid rgba(28, 24, 25, 0.1);
+        background-color: $white;
+        color: $blue;
+        margin-left: 60px;
+        line-height: 24px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.863);
+        }
+    }
+}
