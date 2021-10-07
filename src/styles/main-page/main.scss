@@ -29,13 +29,13 @@
         transition: all 0.2s linear;
 
         &:hover {
-            background: #d6ecfb;
+            background: $light-grey;
             border: 1px solid transparent;
             color: #1c1819;
         }
 
         &--active {
-            background: #d6ecfb;
+            background: $light-grey;
             border: 1px solid transparent;
             color: #1c1819;
         }

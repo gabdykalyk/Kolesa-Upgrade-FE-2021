@@ -3,38 +3,36 @@
 
     &__search {
         display: flex;
-        padding-left: 19px;
-        padding-top: $fs14;
-        padding-bottom: 13px;
+        padding: 14px 0 13px 19px;
         background: #f2f2f3;
         border-radius: 8px;
         width: 308px;
-    }
 
-    &__search input:active {
-        color: $blue;
-    }
+        & input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-size: 18px;
+            margin-left: 16px;
 
-    &__search input:focus {
-        color: $grey;
-    }
+            &:active {
+                color: $blue;
+            }
 
-    &__search-logo {
-        display: block;
-        outline: none;
-        border: none;
-        cursor: pointer;
-    }
+            &:focus {
+                color: $grey;
+            }
 
-    &__search input {
-        border: none;
-        outline: none;
-        background-color: transparent;
-        font-size: 18px;
-        margin-left: 16px;
-    }
+            &::placeholder {
+                color: $grey;
+            }
+        }
 
-    &__search input::placeholder {
-        color: $grey;
+        &-logo {
+            display: block;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
     }
 }
